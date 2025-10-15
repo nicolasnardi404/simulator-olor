@@ -829,14 +829,14 @@ const SustainabilityDashboard = () => {
           </div>
           <div className="footer-section">
             <h4>Contact</h4>
-            <p>info@cafemundi.de</p>
-            <p>+49 (030) 2028-8581</p>
+            <p>info@olor-coffee.com</p>
+            <p>+49 (0)30 3989 2003</p>
           </div>
           <div className="footer-section">
             <h4>Follow Us</h4>
             <div className="social-links">
               <a
-                href="https://www.instagram.com/cafemundi.de/"
+                href="https://www.instagram.com/olor.coffee.studio/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -844,7 +844,7 @@ const SustainabilityDashboard = () => {
                 Instagram
               </a>
               <a
-                href="https://cafemundi.de/"
+                href="https://olor-coffee.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Website"
