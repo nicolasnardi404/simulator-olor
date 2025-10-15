@@ -708,9 +708,17 @@ const PDFReport = ({ dashboardData, currentView }) => {
             </View>
           </View>
         </View>
+      </Page>
 
+      {/* Second Page - Yearly Cumulative Plastic Saved */}
+      <Page size="A4" style={styles.page}>
         {/* Plastic Saved Chart - Yearly Only */}
-        <View>
+        <View
+          style={{
+            pageBreakInside: "avoid",
+            breakInside: "avoid",
+          }}
+        >
           <Text style={styles.chartTitle}>Yearly Cumulative Plastic Saved</Text>
 
           {/* Business Projection Explanation */}
@@ -882,7 +890,10 @@ const PDFReport = ({ dashboardData, currentView }) => {
             </View>
           </View>
         </View>
+      </Page>
 
+      {/* Third Page - Yearly Cumulative CO2 Saved */}
+      <Page size="A4" style={styles.page}>
         {/* CO2 Saved Chart - Yearly Only */}
         <View
           style={{
@@ -1083,7 +1094,10 @@ const PDFReport = ({ dashboardData, currentView }) => {
             </View>
           </View>
         </View>
+      </Page>
 
+      {/* Fourth Page - Environmental Equivalents and Summary */}
+      <Page size="A4" style={styles.page}>
         {/* Environmental Equivalents */}
         <View
           style={[
@@ -1313,185 +1327,22 @@ const PDFReport = ({ dashboardData, currentView }) => {
             </View>
           </View>
         </View>
-      </Page>
-
-      {/* SDG Goals Page */}
-      <Page size="A4" style={styles.page}>
-        {/* Project Info Section */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>
-            BioBrew Berlin: 0 Plastic 0 Aluminium
-          </Text>
-
-          <Text
-            style={[styles.metricLabel, { fontSize: 12, marginBottom: 20 }]}
-          >
-            In cooperation with Global Goals Berlin, OLOR air-roasted in berlin is implementing
-            an ecological, socially responsible, and economically viable project
-            for Berlin's hotel industry through the "BioBrew Berlin: 0 Plastic 0
-            Aluminium" initiative. The goal is to completely replace
-            conventional plastic and aluminum coffee capsules in hotel rooms
-            with biodegradable, plant-based alternatives.
-          </Text>
-
-          {/* Project Metrics Grid */}
-          <View style={[styles.metricsGrid, { marginBottom: 0 }]}>
-            <View style={[styles.metricCard, { width: "31%" }]}>
-              <Text
-                style={[styles.metricValue, { fontSize: 16, color: "#666" }]}
-              >
-                Timeline
-              </Text>
-              <Text style={styles.metricLabel}>Active since April 2025</Text>
-            </View>
-            <View style={[styles.metricCard, { width: "31%" }]}>
-              <Text
-                style={[styles.metricValue, { fontSize: 16, color: "#666" }]}
-              >
-                Impact
-              </Text>
-              <Text style={styles.metricLabel}>
-                Reaches up to 100,000 people or more
-              </Text>
-            </View>
-            <View style={[styles.metricCard, { width: "31%" }]}>
-              <Text
-                style={[styles.metricValue, { fontSize: 16, color: "#666" }]}
-              >
-                Transformation Field
-              </Text>
-              <Text style={styles.metricLabel}>
-                Sustainable Economy, Finance and Consumption
-              </Text>
-            </View>
-          </View>
-
-          {/* Member Organizations Section */}
-          <View
-            style={[
-              styles.metricCard,
-              {
-                width: "100%",
-                backgroundColor: "#F8F9FA",
-                padding: 25,
-                marginTop: 15,
-                marginBottom: 0,
-              },
-            ]}
-          >
-            <Text
-              style={[
-                styles.metricValue,
-                {
-                  fontSize: 16,
-                  color: "#3E2723",
-                  marginBottom: 15,
-                  textAlign: "center",
-                },
-              ]}
-            >
-              OLOR air-roasted in berlin is a member of:
-            </Text>
-
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-                gap: 40,
-              }}
-            >
-              <Image
-                src="/global-goals-berlin.jpeg"
-                style={{ width: 100, height: 100, objectFit: "contain" }}
-              />
-              <Image
-                src="/nach-berlin.jpeg"
-                style={{ width: 140, height: 70, objectFit: "contain" }}
-              />
-            </View>
-          </View>
-        </View>
-
-        {/* SDG Goals Section */}
-        <View style={[styles.section, { marginTop: 30 }]}>
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              marginBottom: 30,
-              gap: 20,
-            }}
-          >
-            <Image
-              src="/global-goals.png"
-              style={{ width: 60, height: "auto" }}
-            />
-            <Text style={[styles.sectionTitle, { flex: 1, marginBottom: 0 }]}>
-              UN Sustainable Development Goals
-            </Text>
-          </View>
-
-          <View
-            style={{
-              flexDirection: "row",
-              flexWrap: "wrap",
-              gap: 30,
-              justifyContent: "center",
-            }}
-          >
-            {/* SDG Goal 8 */}
-            <Image
-              src="/E_SDG_Icons-08.jpg"
-              style={{
-                width: 80,
-                height: 80,
-              }}
-            />
-
-            {/* SDG Goal 9 */}
-            <Image
-              src="/E_SDG_Icons-09.jpg"
-              style={{
-                width: 80,
-                height: 80,
-              }}
-            />
-
-            {/* SDG Goal 12 */}
-            <Image
-              src="/E_SDG_Icons-12.jpg"
-              style={{
-                width: 80,
-                height: 80,
-              }}
-            />
-
-            {/* SDG Goal 13 */}
-            <Image
-              src="/E_SDG_Icons-13.jpg"
-              style={{
-                width: 80,
-                height: 80,
-              }}
-            />
-          </View>
-        </View>
 
         {/* Footer */}
         <View style={styles.footer}>
           <Text style={styles.footerText}>
-            This report was generated by OLOR air-roasted in berlin Sustainability Impact
-            Simulator
+            This report was generated by OLOR air-roasted in berlin
+            Sustainability Impact Simulator
           </Text>
           <Text
             style={[styles.footerText, { marginTop: 4, fontStyle: "italic" }]}
           >
-            OLOR air-roasted in berlin - Sustainable coffee solutions for a better planet.
+            OLOR air-roasted in berlin - Sustainable coffee solutions for a
+            better planet.
           </Text>
           <Text style={[styles.footerText, { marginTop: 4 }]}>
-            &copy; {new Date().getFullYear()} OLOR air-roasted in berlin - Telos Import Export &
-            Trading GmbH. All rights reserved.
+            &copy; {new Date().getFullYear()} OLOR air-roasted in berlin. All
+            rights reserved.
           </Text>
         </View>
       </Page>
