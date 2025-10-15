@@ -859,8 +859,8 @@ const SustainabilityDashboard = () => {
             Sustainable coffee solutions for a better planet.
           </p>
           <p>
-            &copy; {new Date().getFullYear()} OLOR air-roasted in berlin - Telos
-            Import Export & Trading GmbH. All rights reserved.
+            &copy; {new Date().getFullYear()} OLOR air-roasted in berlin. All
+            rights reserved.
           </p>
         </div>
       </footer>
