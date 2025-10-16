@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     lineHeight: 1.5,
   },
   header: {
-    backgroundColor: "#3E2723",
+    backgroundColor: "#6c79b6",
     padding: 20,
     marginBottom: 20,
     borderRadius: 8,
@@ -52,13 +52,13 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 24,
-    color: "#FEF7EE",
+    color: "#FFFFFF",
     fontWeight: "bold",
     marginBottom: 8,
   },
   headerSubtitle: {
     fontSize: 14,
-    color: "#FEF7EE",
+    color: "#FFFFFF",
     opacity: 0.9,
   },
   reportInfo: {
@@ -67,15 +67,15 @@ const styles = StyleSheet.create({
     marginBottom: 25,
     paddingBottom: 15,
     borderBottomWidth: 1,
-    borderBottomColor: "#BCAAA4",
+    borderBottomColor: "#9187bd",
   },
   reportDate: {
     fontSize: 12,
-    color: "#3E2723",
+    color: "#6c79b6",
   },
   reportPeriod: {
     fontSize: 12,
-    color: "#3E2723",
+    color: "#6c79b6",
     fontWeight: "bold",
   },
   section: {
@@ -85,13 +85,13 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 16,
-    color: "#3E2723",
+    color: "#6c79b6",
     fontWeight: "bold",
     marginBottom: 15,
     backgroundColor: "#F5F5F5",
     padding: 12,
     borderRadius: 4,
-    borderLeft: "4px solid #3E2723",
+    borderLeft: "4px solid #6c79b6",
   },
   metricsGrid: {
     flexDirection: "row",
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
   },
   metricCard: {
     width: "48%",
-    backgroundColor: "#FEF7EE",
+    backgroundColor: "#F0F4FF",
     padding: 18,
     marginBottom: 15,
     borderRadius: 6,
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
   metricValue: {
     fontSize: 18,
     fontWeight: "bold",
-    color: "#3E2723",
+    color: "#6c79b6",
     marginBottom: 8,
     lineHeight: 1.2,
   },
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
   perspectiveLabel: {
     fontSize: 12,
     fontWeight: "bold",
-    color: "#3E2723",
+    color: "#6c79b6",
   },
   chartContainer: {
     marginBottom: 30,
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
   chartTitle: {
     fontSize: 14,
     fontWeight: "bold",
-    color: "#3E2723",
+    color: "#6c79b6",
     marginBottom: 12,
   },
   chartPlaceholder: {
@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
   },
   legendText: {
     fontSize: 11,
-    color: "#3E2723",
+    color: "#6c79b6",
     fontWeight: "bold",
   },
   barChartContainer: {
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
   },
   distributionLabel: {
     fontSize: 11,
-    color: "#3E2723",
+    color: "#6c79b6",
     fontWeight: "bold",
   },
   distributionBarContainer: {
@@ -301,7 +301,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5F5F5",
     fontWeight: "bold",
     borderBottomWidth: 2,
-    borderBottomColor: "#3E2723",
+    borderBottomColor: "#6c79b6",
   },
   tableCell: {
     flex: 1,
@@ -328,7 +328,7 @@ const styles = StyleSheet.create({
   equivalentsTitle: {
     fontSize: 14,
     fontWeight: "bold",
-    color: "#3E2723",
+    color: "#666",
     marginBottom: 12,
   },
   equivalentsGrid: {
@@ -1254,7 +1254,7 @@ const PDFReport = ({ dashboardData, currentView }) => {
             <Text
               style={[
                 styles.metricValue,
-                { fontSize: 16, marginBottom: 12, color: "#3E2723" },
+                { fontSize: 16, marginBottom: 12, color: "#666" },
               ]}
             >
               Calculation Methods
@@ -1297,7 +1297,10 @@ const PDFReport = ({ dashboardData, currentView }) => {
             ]}
           >
             <Text
-              style={[styles.metricValue, { fontSize: 16, marginBottom: 12 }]}
+              style={[
+                styles.metricValue,
+                { fontSize: 16, marginBottom: 12, color: "#666" },
+              ]}
             >
               Key Achievements
             </Text>
